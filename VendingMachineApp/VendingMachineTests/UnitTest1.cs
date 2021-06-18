@@ -12,10 +12,12 @@ namespace VendingMachineTest
         public void TestGetProductTypes()
         {
             VendingMachine vendingMachine = new VendingMachine();
-            List<String> ProductTypes = new List<String>();
-            ProductTypes.Add("Chocolates");
-            ProductTypes.Add("Candy");
-            ProductTypes.Add("Cold-drink");
+            List<String> ProductTypes = new List<string>
+            {
+                "Chocolates",
+                "Candy",
+                "Cold-drink"
+            };
             List<String> ProductTypesFromVendingMachine = vendingMachine.ProductTypes;
             bool result;
             foreach (String ProductType in ProductTypes)

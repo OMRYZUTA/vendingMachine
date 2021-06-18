@@ -55,7 +55,7 @@ namespace VendingMachines
                 else if(ex.Message.Contains("out"))
                 {
                     Console.WriteLine(ex.Message);
-                    Console.WriteLine("Try again tommorow");
+                    Console.WriteLine("Try again tomorrow");
                     Run();
                 }
             }
