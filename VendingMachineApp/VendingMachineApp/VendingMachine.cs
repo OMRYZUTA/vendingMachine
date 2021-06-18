@@ -13,13 +13,23 @@ namespace VendingMachines
         }
         private void setProductTypes()
         {
-            ProductTypes.Add("chocolates");
-            ProductTypes.Add("candy");
-            ProductTypes.Add("cold-drink");
+            ProductTypes.Add("Chocolates");
+            ProductTypes.Add("Candy");
+            ProductTypes.Add("Cold-drink");
         }
         public void Start()
         {
             Console.WriteLine("What do you want to buy?");
+        }
+
+        public string TryGet(string i_Product)
+        {
+            String result =null;
+            if (ProductTypes.Contains(i_Product))
+            {
+                result = i_Product;
+            }
+            return result;
         }
     }
 }
